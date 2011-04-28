@@ -1,4 +1,4 @@
-from visits.models import Visit
+from visits_counter.models import Visit
 from datetime import datetime
 
 def add_visit(request,obj):

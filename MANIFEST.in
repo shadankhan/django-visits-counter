@@ -1,0 +1,3 @@
+include README.rst LICENSE AUTHORS CHANGES
+recursive-include visits_counter/ *.*
+recursive-exclude visits_counter/ .*.swp *.pyc

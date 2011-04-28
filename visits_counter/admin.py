@@ -1,5 +1,5 @@
 from django.contrib import admin
-from visits.models import Visit
+from visits_counter.models import Visit
 
 class VisitAdmin(admin.ModelAdmin):
     pass

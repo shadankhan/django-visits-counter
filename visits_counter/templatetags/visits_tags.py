@@ -2,7 +2,7 @@ from django.db.models import get_model
 from django.template import Library, Node, TemplateSyntaxError, Variable, resolve_variable
 from django.utils.translation import ugettext as _
 
-from visits.models import Visit
+from visits_counter.models import Visit
 
 register = Library()
 

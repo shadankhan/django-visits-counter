@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from visits import settings
+from visits_counter import settings
 
 ##########
 # Models #
