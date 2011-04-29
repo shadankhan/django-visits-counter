@@ -30,7 +30,7 @@ class Visit(models.Model):
             visits = visits.filter(user_agent=self.user_agent)
             visits = visits.filter(object_model=self.object_model)
             visits = visits.filter(object_id=self.object_id)
-            visits = visits.filter(time__gt=self.time-timedelta(minutes=settings.MIN_TIME_BETWEEN_VISITS))
+            visits = visits.filter(time__gt=self.time-timedelta(minutes=int(settings.MIN_TIME_BETWEEN_VISITS)))
             if len(visits)==0:
                 super(Visit, self).save(*args, **kwargs)
 
